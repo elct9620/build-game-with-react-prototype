@@ -1,0 +1,33 @@
+.button {
+  color: var(--textColor);
+  border: 1px solid #AEAEAE;
+
+  text-align: center;
+
+  background: transparent;
+
+  transition: 0.25s ease-in;
+}
+
+.pressedButton {
+  color: var(--blackColor);
+  border: 1px solid #AEAEAE;
+
+  text-align: center;
+
+  background: var(--textColor);
+  transform: translate(2px, 2px);
+
+  transition: 0.25s ease-in;
+}
+
+.hoverButton {
+  color: var(--blackColor);
+  border: 1px solid #AEAEAE;
+
+  text-align: center;
+
+  background: var(--textColor);
+
+  transition: 0.25s ease-in;
+}

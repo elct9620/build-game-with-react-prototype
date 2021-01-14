@@ -1,0 +1,37 @@
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes rotating {
+  0% { transform: scale(0.7) rotate(0deg); }
+  50% {
+    border-radius: 0% 0% 75% 0%;
+    transform: scale(0.7) rotate(180deg);
+  }
+  100% { transform: scale(0.7) rotate(360deg); }
+}
+
+.cursorOutter {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px solid var(--cursorColor);
+
+  animation: flash 3s infinite both;
+
+  z-index: 10000;
+}
+
+.cursorInner {
+  position: absolute;
+
+  top: -1px;
+  left: -1px;
+
+  border: 1px solid var(--cursorColor);
+
+  animation: rotating 5s infinite;
+}

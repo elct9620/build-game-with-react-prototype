@@ -9,13 +9,13 @@ import ButtonSystem from '../systems/button'
 import LayoutSystem from '../systems/layout'
 import SceneSwitchSystem from '../systems/sceneSwitch'
 
-import { entities } from '../scenes/start'
+import { entities } from '../scenes/town'
 
-const Home = ({ router }) => {
+const Town = ({ router }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>React Game Engine</title>
+        <title>First Town</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/fonts/VPPixel-Simplified.otf" as="font" crossOrigin="" />
       </Head>
@@ -37,4 +37,4 @@ const Home = ({ router }) => {
   )
 }
 
-export default withRouter(Home)
+export default withRouter(Town);

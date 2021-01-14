@@ -1,14 +1,37 @@
+@font-face {
+  font-family: "VPPixel";
+  src: url("/fonts/VPPixel-Simplified.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --blackColor: #232323;
+  --cursorColor: #AEAEAE;
+  --textColor: #EFEFEF;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'VPPixel', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  letter-spacing: .15em;
+  color: var(--textColor);
+  cursor: none;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  font-family: 'VPPixel', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  letter-spacing: .15em;
 }
 
 * {
